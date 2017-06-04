@@ -3,8 +3,8 @@
 
 (defn- chartkick-tag
   [id, height]
-  (format "<div id=\"%s\" style=\"height: %s; text-align: center; color: #999; line-height: #{height}; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;\">Loading...</div>"
-          id height))
+  (format "<div id=\"%s\" style=\"height: %s; text-align: center; color: #999; line-height: %s; font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif;\">Loading...</div>"
+          id height height))
 
 (defn- chartkick-script
   [class id data-source options-json]
